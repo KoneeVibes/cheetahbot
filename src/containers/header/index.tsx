@@ -1,6 +1,8 @@
-import { Box, Stack, Typography } from "@mui/material"
-import { BaseButton } from "../../components/button"
-import { BitTorrent, Bnbchain, ChainLink, Eth, Polygon, Solana, Synthetix, Vechain } from "../../assets"
+import React from "react";
+import { Box, Stack, Typography } from "@mui/material";
+import { BaseButton } from "../../components/button";
+import { clientsI, clientsII } from "../../configs/content";
+import { ButtonStack, LogoStack } from "./styled";
 
 export const Header: React.FC<{}> = () => {
     return (
@@ -45,17 +47,18 @@ export const Header: React.FC<{}> = () => {
                     EXPERIENCE the world of lightening speed with our sniper trading bot, grow your crypto currency portfolio on multiple chain and unlock limitless possibilities in your crypto currency profit trading.
                 </Typography>
             </Box>
-            <Stack
-                direction={{ tablet: "row" }}
-                gap={"calc(var(--flexGap)/1.5)"}
-                padding={"var(--cardPadding) 0"}
-            >
+            <ButtonStack>
                 <BaseButton
                     variant="contained"
                 >
                     <Typography
                         variant="button"
                         color={"rgba(255, 255, 255, 1)"}
+                        textTransform={"capitalize"}
+                        fontFamily={"Inter"}
+                        fontWeight={500}
+                        fontSize={{ mobile: 19 }}
+                        lineHeight={"normal"}
                     >
                         Get started
                     </Typography>
@@ -66,23 +69,44 @@ export const Header: React.FC<{}> = () => {
                     <Typography
                         variant="button"
                         color={"rgba(255, 255, 255, 1)"}
+                        textTransform={"capitalize"}
+                        fontFamily={"Inter"}
+                        fontWeight={500}
+                        fontSize={{ mobile: 19 }}
+                        lineHeight={"normal"}
                     >
                         Dowload whitepaper
                     </Typography>
                 </BaseButton>
-            </Stack>
-            <Stack
-                direction={"row"}
-            >
-                <Eth />
-                <Solana />
-                <Polygon />
-                <Vechain />
-                <Bnbchain />
-                <ChainLink />
-                <Synthetix />
-                <BitTorrent />
-            </Stack>
+            </ButtonStack>
+            <LogoStack>
+                <Stack
+                    direction={"row"}
+                    alignItems={"center"}
+                    gap={"calc(var(--flexGap)/1.5)"}
+                >
+                    {clientsI.map((client, k) => {
+                        return (
+                            <React.Fragment key={k}>
+                                {client}
+                            </React.Fragment>
+                        )
+                    })}
+                </Stack>
+                <Stack
+                    direction={"row"}
+                    alignItems={"center"}
+                    gap={"calc(var(--flexGap)/1.5)"}
+                >
+                    {clientsII.map((client, k) => {
+                        return (
+                            <React.Fragment key={k}>
+                                {client}
+                            </React.Fragment>
+                        )
+                    })}
+                </Stack>
+            </LogoStack>
         </Stack>
     )
 }

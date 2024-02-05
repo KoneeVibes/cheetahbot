@@ -4,6 +4,7 @@ import { Box, Container } from '@mui/material';
 import { Nav } from './containers/navigation';
 import { Header } from './containers/header';
 import headerBg from "../src/assets/headerBg.svg";
+import { BotTrade } from './containers/bottrade';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Nav />
         <Header />
       </Box>
+      <BotTrade />
     </Container >
   );
 }

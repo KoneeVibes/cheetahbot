@@ -34,6 +34,7 @@ export const Navbar = styled("nav")(
                     top: "calc(64px + var(--sectionMargin))",
                     padding: "calc(2 * var(--cardPadding))",
                     background: "#000000",
+                    zIndex: 10,
                 },
             },
             "& a": {
@@ -50,6 +51,7 @@ export const Navbar = styled("nav")(
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     bottom: "calc(2 * var(--cardPadding))",
+                    zIndex: 10,
                 }
             },
         }

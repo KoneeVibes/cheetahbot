@@ -5,9 +5,19 @@ import { Logo } from "../../assets";
 import { BaseButton } from "../../components/button";
 import { Typography } from "@mui/material";
 import { Menu } from "../../components/button/menu";
+import { useContext, useEffect } from "react";
+import { Context } from "../../context";
 
 
 export const Nav: React.FC<{}> = () => {
+    const { openMenu } = useContext(Context);
+    useEffect(() => {
+        if (openMenu) {
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "visible"
+        }
+    }, [openMenu])
     return (
         <Navbar>
             <Logo />

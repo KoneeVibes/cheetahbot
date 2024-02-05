@@ -4,6 +4,7 @@ export const BaseButton = styled(Button)(
     ({ theme, variant }) => ({
         fontFamily: "Inter",
         borderRadius: 58.8,
+        padding: "1rem 2rem",
         background: (() => {
             switch (variant) {
                 case 'text':
@@ -53,6 +54,9 @@ export const BaseButton = styled(Button)(
                         return 'transparent';
                 }
             })(),
+        },
+        [theme.breakpoints.up("tablet")]: {
+            padding: "1rem 4rem",
         }
     })
 )
