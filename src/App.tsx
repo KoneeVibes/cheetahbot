@@ -1,11 +1,19 @@
 import React from 'react';
 import './App.css';
+import { Container } from '@mui/material';
+import { Nav } from './containers/navigation';
 
 function App() {
   return (
-    <div>
-      <h1>We are good to go</h1>
-    </div>
+    <Container
+      maxWidth={false}
+      sx={{
+        padding: "0 !important",
+        overflow: "hidden",
+      }}
+    >
+      <Nav />
+    </Container>
   );
 }
 
