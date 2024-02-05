@@ -4,6 +4,8 @@ import { Navbar } from "./styled";
 import { Logo } from "../../assets";
 import { BaseButton } from "../../components/button";
 import { Typography } from "@mui/material";
+import { Menu } from "../../components/button/menu";
+
 
 export const Nav: React.FC<{}> = () => {
     return (
@@ -27,6 +29,7 @@ export const Nav: React.FC<{}> = () => {
             </ul>
             <BaseButton
                 variant="contained"
+                className="actionButton"
             >
                 <Typography
                     variant="button"
@@ -34,6 +37,7 @@ export const Nav: React.FC<{}> = () => {
                     Get started
                 </Typography>
             </BaseButton>
+            <Menu />
         </Navbar>
     )
 }

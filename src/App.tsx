@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import { Container } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import { Nav } from './containers/navigation';
+import { Header } from './containers/header';
+import headerBg from "../src/assets/headerBg.svg";
 
 function App() {
   return (
@@ -12,8 +14,17 @@ function App() {
         overflow: "hidden",
       }}
     >
-      <Nav />
-    </Container>
+      <Box
+        sx={{
+          backgroundImage: `url(${headerBg})`,
+          backgroundSize: "cover",
+        }}
+      >
+        <div style={{ height: "1px" }} />
+        <Nav />
+        <Header />
+      </Box>
+    </Container >
   );
 }
 

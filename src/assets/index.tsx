@@ -1,1 +1,9 @@
 export { ReactComponent as Logo } from "./logo.svg";
+export { ReactComponent as BitTorrent } from "./bittorrentLogo.svg";
+export { ReactComponent as Bnbchain } from "./bnbchainlogo.svg";
+export { ReactComponent as ChainLink } from "./chainLinkLogo.svg";
+export { ReactComponent as Eth } from "./ethlogo.svg";
+export { ReactComponent as Polygon } from "./polygonLogo.svg";
+export { ReactComponent as Solana } from "./solanalogo.svg";
+export { ReactComponent as Synthetix } from "./synthetixLogo.svg";
+export { ReactComponent as Vechain } from "./vechainlogo.svg";

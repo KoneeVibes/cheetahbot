@@ -15,8 +15,32 @@
     }
 }
 
+@media screen and (min-width: 425px) {
+    html {
+        --pagePadding: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        --pagePadding: 3rem
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        --pagePadding: 6rem
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    html {
+        --pagePadding: 8rem
+    }
+}
+
 @media screen and (min-width: 1440px) {
-    html{
+    html {
         --pagePadding: 10.8rem;
     }
 }
