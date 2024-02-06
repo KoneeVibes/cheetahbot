@@ -18,4 +18,9 @@ export type CardBaseProps = {
     headerFD?: any
     headerAlign?: any
     contentPadding?: string | number
+    mobileMargin?: string | number,
+    miniTabletMargin?: string | number,
+    laptopMargin?: string | number,
+    bgImage?: string
+    width?: string
 }

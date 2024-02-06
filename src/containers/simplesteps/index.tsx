@@ -31,7 +31,7 @@ export const Simplesteps: React.FC<{}> = () => {
                 gap={{ tablet: "var(--flexGap)" }}
                 justifyContent={"space-between"}
             >
-                <Box>
+                <Box flex={1}>
                     {simplestepsI.map((step, key) => {
                         return (
                             <Stack
@@ -43,7 +43,7 @@ export const Simplesteps: React.FC<{}> = () => {
                                 <Typography
                                     variant="h3"
                                     color={"rgba(255, 255, 255, 0.2)"}
-                                    flex={"1 1 25%"}
+                                    flex={{ laptop: "1 1 25%" }}
                                     fontFamily={"Neue Machina"}
                                     fontWeight={400}
                                     fontSize={{ mobile: 35, desktop: 50 }}
@@ -88,7 +88,7 @@ export const Simplesteps: React.FC<{}> = () => {
                         )
                     })}
                 </Box>
-                <Box>
+                <Box flex={1}>
                     {simplestepsII.map((step, key) => {
                         return (
                             <Stack
@@ -100,7 +100,7 @@ export const Simplesteps: React.FC<{}> = () => {
                                 <Typography
                                     variant="h3"
                                     color={"rgba(255, 255, 255, 0.2)"}
-                                    flex={"1 1 25%"}
+                                    flex={{ laptop: "1 1 25%" }}
                                     fontFamily={"Neue Machina"}
                                     fontWeight={400}
                                     fontSize={{ mobile: 35, desktop: 50 }}
