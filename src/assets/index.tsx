@@ -17,3 +17,7 @@ export { ReactComponent as MileThree } from "./milethree.svg";
 export { ReactComponent as MiileFour } from "./milefour.svg";
 export { ReactComponent as MileFive } from "./milefive.svg";
 export { ReactComponent as MileSix } from "./milesix.svg";
+export { ReactComponent as Facebook } from "./facebook.svg";
+export { ReactComponent as Instagram } from "./instagram.svg";
+export { ReactComponent as Telegram } from "./telegram.svg";
+export { ReactComponent as Twitter } from "./twitter.svg";

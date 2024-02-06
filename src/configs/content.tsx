@@ -1,4 +1,4 @@
-import { BitTorrent, Bnbchain, ChainLink, Eth, Liquidity, MiileFour, MileFive, MileOne, MileSix, MileThree, MileTwo, Polygon, Solana, Supply, Symbol, Synthetix, Tax, Vechain } from "../assets";
+import { BitTorrent, Bnbchain, ChainLink, Eth, Facebook, Instagram, Liquidity, MiileFour, MileFive, MileOne, MileSix, MileThree, MileTwo, Polygon, Solana, Supply, Symbol, Synthetix, Tax, Telegram, Twitter, Vechain } from "../assets";
 
 export const navLinks = [
     {
@@ -146,3 +146,7 @@ export const simplestepsII = [
         body: "Enjoy seamless trading with profit!",
     },
 ];
+
+export const smIcons = [
+    <Facebook />, <Telegram />, <Instagram />, <Twitter />
+]

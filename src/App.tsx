@@ -11,6 +11,7 @@ import { Roadmap } from './containers/roadmap.tsx';
 import roadmapbg from "../src/assets/roadmapbg.svg";
 import { Simplesteps } from './containers/simplesteps';
 import { Experience } from './containers/experience';
+import { Footer } from './containers/footer';
 
 function App() {
   return (
@@ -71,6 +72,7 @@ function App() {
       />
       <Simplesteps />
       <Experience />
+      <Footer />
     </Container >
   );
 }
