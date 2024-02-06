@@ -1,6 +1,6 @@
-import { CardActions, CardContent, CardHeader } from "@mui/material"
-import { CardBase } from "./styled"
-import { CardBaseProps } from "../../types/app.type"
+import { CardActions, CardContent, CardHeader } from "@mui/material";
+import { CardBase } from "./styled";
+import { CardBaseProps } from "../../types/app.type";
 
 export const BaseCard: React.FC<CardBaseProps> = ({ title, subheader, avatar, content, buttons, bgCol, borRad, justCont, padding, bord, flx, cardPadding, mobileCardPadding, height, headerFD, headerAlign, contentPadding, mobileMargin, miniTabletMargin, laptopMargin, bgImage, width }) => {
     return (
@@ -14,7 +14,7 @@ export const BaseCard: React.FC<CardBaseProps> = ({ title, subheader, avatar, co
                 height: height,
                 margin: { mobile: mobileMargin, miniTablet: miniTabletMargin, laptop: laptopMargin },
                 backgroundImage: bgImage,
-                width:width
+                width: width,
             }}
         >
             <CardHeader

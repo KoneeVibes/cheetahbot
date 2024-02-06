@@ -35,6 +35,7 @@ export const Navbar = styled("nav")(
                     padding: "calc(2 * var(--cardPadding))",
                     background: "#000000",
                     zIndex: 10,
+                    marginBlockEnd: 0,
                 },
             },
             "& a": {

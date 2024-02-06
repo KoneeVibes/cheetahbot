@@ -7,7 +7,7 @@ export const navLinks = [
     },
     {
         name: "Features",
-        url: "#"
+        url: "#features"
     },
     {
         name: "FAQ",
@@ -149,4 +149,22 @@ export const simplestepsII = [
 
 export const smIcons = [
     <Facebook />, <Telegram />, <Instagram />, <Twitter />
+];
+
+export const trade = [
+    {
+        id: "POL/CHT",
+        fee: "$4,900",
+        status: "Trade closed",
+    },
+    {
+        id: "SOL/CHT",
+        fee: "$2,343",
+        status: "Trade closed",
+    },
+    {
+        id: "ETH/CHT",
+        fee: "$5,783",
+        status: "Trade closed",
+    },
 ]

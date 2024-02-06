@@ -13,9 +13,9 @@ export const Nav: React.FC<{}> = () => {
     const { openMenu } = useContext(Context);
     useEffect(() => {
         if (openMenu) {
-            document.body.style.overflow = "hidden"
+            document.body.style.overflowY = "hidden"
         } else {
-            document.body.style.overflow = "visible"
+            document.body.style.overflowY = "visible"
         }
     }, [openMenu])
     return (

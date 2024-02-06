@@ -6,6 +6,8 @@ import featuresBg from "../../assets/featuresBg.svg";
 export const Features: React.FC<{}> = () => {
     return (
         <Box
+            component={"div"}
+            id="features"
             margin={{
                 mobile: "calc(1.5 * var(--sectionMargin)) var(--pagePadding)",
                 miniTablet: "calc(2 * var(--sectionMargin)) var(--pagePadding)",

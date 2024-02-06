@@ -12,8 +12,11 @@ import roadmapbg from "../src/assets/roadmapbg.svg";
 import { Simplesteps } from './containers/simplesteps';
 import { Experience } from './containers/experience';
 import { Footer } from './containers/footer';
+import { useContext } from 'react';
+import { Context } from './context';
 
 function App() {
+  const { openMenu } = useContext(Context)
   return (
     <Container
       maxWidth={false}
@@ -24,7 +27,7 @@ function App() {
     >
       <Box
         sx={{
-          backgroundImage: `url(${headerBg})`,
+          backgroundImage: openMenu ? "" : `url(${headerBg})`,
           backgroundSize: "cover",
         }}
       >
