@@ -5,6 +5,9 @@ import { Nav } from './containers/navigation';
 import { Header } from './containers/header';
 import headerBg from "../src/assets/headerBg.svg";
 import { BotTrade } from './containers/bottrade';
+import { Tokenomics } from './containers/tokenomics';
+import { Features } from './containers/features';
+import { BaseButton } from './components/button';
 
 function App() {
   return (
@@ -26,6 +29,11 @@ function App() {
         <Header />
       </Box>
       <BotTrade />
+      <Tokenomics />
+      <Features />
+      <BaseButton>
+        
+      </BaseButton>
     </Container >
   );
 }

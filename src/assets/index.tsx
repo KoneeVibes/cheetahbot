@@ -7,3 +7,7 @@ export { ReactComponent as Polygon } from "./polygonLogo.svg";
 export { ReactComponent as Solana } from "./solanalogo.svg";
 export { ReactComponent as Synthetix } from "./synthetixLogo.svg";
 export { ReactComponent as Vechain } from "./vechainlogo.svg";
+export { ReactComponent as Supply } from "./supply.svg";
+export { ReactComponent as Tax } from "./tax.svg";
+export { ReactComponent as Liquidity } from "./liquidity.svg";
+export { ReactComponent as Symbol } from "./symbol.svg";
