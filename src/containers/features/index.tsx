@@ -33,12 +33,13 @@ export const Features: React.FC<{}> = () => {
                 {features.map((feature, k) => {
                     return (
                         <BaseCard
+                            key={k}
                             flx="1 1 45%"
                             borRad={8}
                             bord={"2px solid rgba(255, 255, 255, 0.12)"}
                             bgCol="transparent"
                             cardPadding={"calc(2 * var(--cardPadding))"}
-                            mobileCardPadding={"var(--cardPadding))"}
+                            mobileCardPadding={"calc(var(--cardPadding)/1.5)"}
                             title={
                                 <Typography
                                     variant="h3"

@@ -1,0 +1,15 @@
+.roadmap-pointer {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16;
+    line-height: normal;
+    color: rgba(182, 182, 182, 1);
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    list-style: inside;
+}
+
+.roadmap-pointers{
+    padding: 0;
+}

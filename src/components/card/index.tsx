@@ -2,7 +2,7 @@ import { CardActions, CardContent, CardHeader } from "@mui/material"
 import { CardBase } from "./styled"
 import { CardBaseProps } from "../../types/app.type"
 
-export const BaseCard: React.FC<CardBaseProps> = ({ title, subheader, avatar, content, buttons, bgCol, borRad, justCont, padding, bord, flx, cardPadding, mobileCardPadding }) => {
+export const BaseCard: React.FC<CardBaseProps> = ({ title, subheader, avatar, content, buttons, bgCol, borRad, justCont, padding, bord, flx, cardPadding, mobileCardPadding, height, headerFD, headerAlign }) => {
     return (
         <CardBase
             sx={{
@@ -11,6 +11,7 @@ export const BaseCard: React.FC<CardBaseProps> = ({ title, subheader, avatar, co
                 border: bord,
                 flex: flx,
                 padding: { mobile: `${mobileCardPadding} !important`, tablet: `${cardPadding} !important` },
+                height: height,
             }}
         >
             <CardHeader
@@ -19,8 +20,9 @@ export const BaseCard: React.FC<CardBaseProps> = ({ title, subheader, avatar, co
                 avatar={avatar}
                 sx={{
                     justifyContent: justCont,
-                    padding: `${padding} !important`
-
+                    padding: `${padding} !important`,
+                    flexDirection: headerFD,
+                    alignItems: headerAlign,
                 }}
             />
             {

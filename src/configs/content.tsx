@@ -1,4 +1,4 @@
-import { BitTorrent, Bnbchain, ChainLink, Eth, Liquidity, Polygon, Solana, Supply, Symbol, Synthetix, Tax, Vechain } from "../assets";
+import { BitTorrent, Bnbchain, ChainLink, Eth, Liquidity, MiileFour, MileFive, MileOne, MileSix, MileThree, MileTwo, Polygon, Solana, Supply, Symbol, Synthetix, Tax, Vechain } from "../assets";
 
 export const navLinks = [
     {
@@ -74,5 +74,44 @@ export const features = [
     {
         title: "Copy-trade",
         body: "Copy any trade of your choice."
+    },
+];
+
+export const roadmap = [
+    {
+        avatar: <MileOne />,
+        title: "Mile 1",
+        body: ["Product development", "Socials and website", "Community building"],
+        size: 6
+    },
+    {
+        avatar: <MileTwo />,
+        title: "Mile 2",
+        body: ["KOL Partnership", "Pre - launch marketing", "$Cheetah fair - launch"],
+        size: 3
+    },
+    {
+        avatar: <MileThree />,
+        title: "Mile 3",
+        body: ["BOT release", "Product marketing", "Further development", "Multi - chain sniping and trading"],
+        size: 3
+    },
+    {
+        avatar: <MiileFour />,
+        title: "Mile 4",
+        body: ["CG/CMC application", "Presale bot", "Product marketing"],
+        size: 3.5
+    },
+    {
+        avatar: <MileFive />,
+        title: "Mile 5",
+        body: ["Copy trading", "Revenue share", "App launch with AI signal partnership", "Further development",],
+        size: 5
+    },
+    {
+        avatar: <MileSix />,
+        title: "Mile 6",
+        body: ["CEX listings", "Further product development and optimization", "Further product marketing.",],
+        size: 3.5
     },
 ]

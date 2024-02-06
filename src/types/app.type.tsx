@@ -14,4 +14,7 @@ export type CardBaseProps = {
     flx?: string
     cardPadding?: any
     mobileCardPadding?: any
+    height?: string
+    headerFD?: any
+    headerAlign?: any
 }
