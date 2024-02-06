@@ -17,4 +17,3 @@ export { ReactComponent as MileThree } from "./milethree.svg";
 export { ReactComponent as MiileFour } from "./milefour.svg";
 export { ReactComponent as MileFive } from "./milefive.svg";
 export { ReactComponent as MileSix } from "./milesix.svg";
-export { ReactComponent as RoadMapBg } from "./roadmapbg.svg";

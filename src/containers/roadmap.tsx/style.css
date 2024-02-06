@@ -1,15 +1,29 @@
-.roadmap-pointer {
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 16;
-    line-height: normal;
-    color: rgba(182, 182, 182, 1);
-    overflow: hidden;
-    white-space: normal;
-    text-overflow: ellipsis;
-    list-style: inside;
+.roadmap-pointers {
+    padding: 0;
 }
 
-.roadmap-pointers{
-    padding: 0;
+@media screen and (min-width:0px) {
+    .roadmap-pointer {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 9px;
+        line-height: normal;
+        color: rgba(182, 182, 182, 1);
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+        list-style: inside;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .roadmap-pointer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .roadmap-pointer {
+        font-size: 16px;
+    }
 }

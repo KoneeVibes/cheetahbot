@@ -1,6 +1,7 @@
-import { Box, Stack, Typography } from "@mui/material"
-import { features } from "../../configs/content"
-import { BaseCard } from "../../components/card"
+import { Box, Stack, Typography } from "@mui/material";
+import { features } from "../../configs/content";
+import { BaseCard } from "../../components/card";
+import featuresBg from "../../assets/featuresBg.svg";
 
 export const Features: React.FC<{}> = () => {
     return (
@@ -9,6 +10,11 @@ export const Features: React.FC<{}> = () => {
                 mobile: "calc(1.5 * var(--sectionMargin)) var(--pagePadding)",
                 miniTablet: "calc(2 * var(--sectionMargin)) var(--pagePadding)",
                 laptop: "calc(4 * var(--sectionMargin)) var(--pagePadding)",
+            }}
+            sx={{
+                backgroundImage: `url(${featuresBg})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
             }}
         >
             <Typography

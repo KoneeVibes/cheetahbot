@@ -2,7 +2,7 @@ import { CardActions, CardContent, CardHeader } from "@mui/material"
 import { CardBase } from "./styled"
 import { CardBaseProps } from "../../types/app.type"
 
-export const BaseCard: React.FC<CardBaseProps> = ({ title, subheader, avatar, content, buttons, bgCol, borRad, justCont, padding, bord, flx, cardPadding, mobileCardPadding, height, headerFD, headerAlign }) => {
+export const BaseCard: React.FC<CardBaseProps> = ({ title, subheader, avatar, content, buttons, bgCol, borRad, justCont, padding, bord, flx, cardPadding, mobileCardPadding, height, headerFD, headerAlign, contentPadding }) => {
     return (
         <CardBase
             sx={{
@@ -26,7 +26,11 @@ export const BaseCard: React.FC<CardBaseProps> = ({ title, subheader, avatar, co
                 }}
             />
             {
-                content && <CardContent>
+                content && <CardContent
+                    sx={{
+                        padding: contentPadding
+                    }}
+                >
                     {content}
                     <div className="positionTopRightEdge"></div>
                 </CardContent>

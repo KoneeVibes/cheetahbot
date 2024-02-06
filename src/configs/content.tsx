@@ -114,4 +114,35 @@ export const roadmap = [
         body: ["CEX listings", "Further product development and optimization", "Further product marketing.",],
         size: 3.5
     },
-]
+];
+
+export const simplestepsI = [
+    {
+        id: "01",
+        title: "Quick sign-up",
+        body: "It’ll take you 2 minutes top",
+    },
+    {
+        id: "02",
+        title: "Security setup",
+        body: "It’ll take you 2 minutes top",
+    },
+    {
+        id: "03",
+        title: "Connect wallet",
+        body: "It’ll take you 2 minutes top",
+    },
+];
+
+export const simplestepsII = [
+    {
+        id: "04",
+        title: "Set your trades",
+        body: "Set your trades at your desired rate, and get paid.",
+    },
+    {
+        id: "05",
+        title: "Launch your trade",
+        body: "Enjoy seamless trading with profit!",
+    },
+];

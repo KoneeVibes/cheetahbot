@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { Box, Container, Typography } from '@mui/material';
 import { Nav } from './containers/navigation';
@@ -9,7 +8,8 @@ import { Tokenomics } from './containers/tokenomics';
 import { Features } from './containers/features';
 import { BaseButton } from './components/button';
 import { Roadmap } from './containers/roadmap.tsx';
-import { RoadMapBg } from './assets';
+import roadmapbg from "../src/assets/roadmapbg.svg";
+import { Simplesteps } from './containers/simplesteps';
 
 function App() {
   return (
@@ -60,9 +60,15 @@ function App() {
         </BaseButton>
       </Box>
       <Roadmap />
-      <Box>
-        <RoadMapBg width={"100%"} />
-      </Box>
+      <Box
+        sx={{
+          backgroundImage: `url(${roadmapbg})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: 428
+        }}
+      />
+      <Simplesteps />
     </Container >
   );
 }

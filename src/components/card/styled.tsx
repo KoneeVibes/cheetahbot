@@ -8,5 +8,11 @@ export const CardBase = styled(Card)(
         "& .MuiCardHeader-content": {
             width: "100%",
         },
+        [theme.breakpoints.down("tablet")]: {
+            "& .MuiCardHeader-avatar svg": {
+                width: "50%",
+                height: "auto"
+            }
+        }
     })
 )

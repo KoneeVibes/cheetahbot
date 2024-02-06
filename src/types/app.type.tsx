@@ -17,4 +17,5 @@ export type CardBaseProps = {
     height?: string
     headerFD?: any
     headerAlign?: any
+    contentPadding?: string | number
 }

@@ -1,6 +1,7 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { roadmap } from "../../configs/content";
 import { BaseCard } from "../../components/card";
+import roadmapbg from "../../assets/roadmapbodybg.svg";
 import "./style.css";
 
 export const Roadmap: React.FC<{}> = () => {
@@ -10,6 +11,11 @@ export const Roadmap: React.FC<{}> = () => {
                 mobile: "calc(1.5 * var(--sectionMargin)) var(--pagePadding)",
                 miniTablet: "calc(2 * var(--sectionMargin)) var(--pagePadding)",
                 laptop: "calc(4 * var(--sectionMargin)) var(--pagePadding)",
+            }}
+            sx={{
+                backgroundImage: `url(${roadmapbg})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
             }}
         >
             <Typography
@@ -53,7 +59,7 @@ export const Roadmap: React.FC<{}> = () => {
                                         textTransform={"uppercase"}
                                         fontFamily={"Inter"}
                                         fontWeight={600}
-                                        fontSize={{ mobile: 21 }}
+                                        fontSize={{ mobile: 11, miniTablet: 18, desktop: 21 }}
                                         lineHeight={"normal"}
                                         color={"rgba(236, 241, 240, 1)"}
                                         marginBlockStart={"1rem"}
