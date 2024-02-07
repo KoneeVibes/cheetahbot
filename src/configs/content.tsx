@@ -1,4 +1,4 @@
-import { BitTorrent, Bnbchain, ChainLink, Eth, Facebook, Instagram, Liquidity, MiileFour, MileFive, MileOne, MileSix, MileThree, MileTwo, Polygon, Solana, Supply, Symbol, Synthetix, Tax, Telegram, Twitter, Vechain } from "../assets";
+import { Analyser, AntiRug, BitTorrent, Bnbchain, BuySell, ChainLink, Copy, Eth, Facebook, Instagram, Limit, Liquidity, MiileFour, MileFive, MileOne, MileSix, MileThree, MileTwo, MultiChain, Polygon, Presale, Sniper, Solana, Supply, Symbol, Synthetix, Tax, Telegram, Twitter, Vechain } from "../assets";
 
 export const navLinks = [
     {
@@ -45,35 +45,43 @@ export const tokenomics = [
 export const features = [
     {
         title: "Sniper Bot",
-        body: "Experience the lightening cheetah speed, Be ahead of the game."
+        body: "Experience the lightening cheetah speed, Be ahead of the game.",
+        icon: <Sniper />
     },
     {
         title: "Buy/Sell",
-        body: "Without any limitations enjoy protection from MeV and be the safest trader."
+        body: "Without any limitations enjoy protection from MeV and be the safest trader.",
+        icon: <BuySell />
     },
     {
         title: "Pre-sale Bot",
-        body: "Snipe your best pre-sales with ease. Keep track of all pre-sales."
+        body: "Snipe your best pre-sales with ease. Keep track of all pre-sales.",
+        icon: <Presale />
     },
     {
         title: "Multi-Chain",
-        body: "Explore the widest Cryptocurrency Market discover Gems and enjoy your profit without stress with cheetah bot."
+        body: "Explore the widest Cryptocurrency Market discover Gems and enjoy your profit without stress with cheetah bot.",
+        icon: <MultiChain />
     },
     {
         title: "Anti-Rug",
-        body: "Be protected from Rug pulls with cheetah bot"
+        body: "Be protected from Rug pulls with cheetah bot",
+        icon: <AntiRug />
     },
     {
         title: "Limit Orders",
-        body: "Automate your take profits, dip buying,stop loss and trailing stop loss."
+        body: "Automate your take profits, dip buying,stop loss and trailing stop loss.",
+        icon: <Limit />
     },
     {
         title: "Analyser",
-        body: "Get free tokens analysis."
+        body: "Get free tokens analysis.",
+        icon: <Analyser />
     },
     {
         title: "Copy-trade",
-        body: "Copy any trade of your choice."
+        body: "Copy any trade of your choice.",
+        icon: <Copy />
     },
 ];
 
@@ -148,7 +156,22 @@ export const simplestepsII = [
 ];
 
 export const smIcons = [
-    <Facebook />, <Telegram />, <Instagram />, <Twitter />
+    {
+        icon: <Facebook />,
+        url: ""
+    },
+    {
+        icon: <Telegram />,
+        url: "https://t.me/cheetahbots_tech",
+    },
+    {
+        icon: < Instagram />,
+        url: "",
+    },
+    {
+        icon: < Twitter />,
+        url: "https://x.com/Cheetah_Bots",
+    }
 ];
 
 export const trade = [

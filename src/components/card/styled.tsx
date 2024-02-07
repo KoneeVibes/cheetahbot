@@ -1,18 +1,29 @@
 import { Card, styled } from "@mui/material";
 
-export const CardBase = styled(Card)(
-    ({ theme }) => ({
-        overflow: "hidden",
+export const CardBase = styled(Card)<{ hasicon: boolean, mobilevalue: number, tabletvalue: number }>(
+    ({ theme, hasicon, mobilevalue, tabletvalue }) => ({
+        overflow: hasicon ? "visible" : "hidden",
         width: "100%",
         boxSizing: "border-box",
         "& .MuiCardHeader-content": {
-            width: "100%",
+            position: hasicon && "absolute"
         },
-        [theme.breakpoints.down("tablet")]: {
-            "& .MuiCardHeader-avatar svg": {
-                width: "50%",
-                height: "auto"
-            }
-        }
+        "& .MuiCardHeader-avatar": {
+            position: hasicon && "relative",
+            width: hasicon && "100%",
+        },
+        "& .MuiCardHeader-avatar svg": {
+            position: hasicon && "absolute",
+            top: hasicon && `-${mobilevalue}px`,
+            right: hasicon && `-${mobilevalue}px`,
+            [theme.breakpoints.up("tablet")]: {
+                top: hasicon && `-${tabletvalue}px`,
+                right: hasicon && `-${tabletvalue}px`
+            },
+            [theme.breakpoints.down("tablet")]: {
+                width: !hasicon && "50%",
+                height: !hasicon && "auto",
+            },
+        },
     })
 )

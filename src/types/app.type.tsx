@@ -20,7 +20,14 @@ export type CardBaseProps = {
     contentPadding?: string | number
     mobileMargin?: string | number,
     miniTabletMargin?: string | number,
+    tabletMargin?: string | number,
     laptopMargin?: string | number,
     bgImage?: string
     width?: string
+    position?: "static" | "relative" | "absolute" | "fixed" | "sticky"
+    top?: string | number
+    transform?: string
+    hasicon?: boolean,
+    mobilevalue?: number,
+    tabletvalue?: number,
 }

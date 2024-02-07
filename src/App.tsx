@@ -8,12 +8,12 @@ import { Tokenomics } from './containers/tokenomics';
 import { Features } from './containers/features';
 import { BaseButton } from './components/button';
 import { Roadmap } from './containers/roadmap.tsx';
-import roadmapbg from "../src/assets/roadmapbg.svg";
 import { Simplesteps } from './containers/simplesteps';
 import { Experience } from './containers/experience';
 import { Footer } from './containers/footer';
 import { useContext } from 'react';
 import { Context } from './context';
+import { RoadmapBg } from './assets';
 
 function App() {
   const { openMenu } = useContext(Context)
@@ -65,12 +65,11 @@ function App() {
         </BaseButton>
       </Box>
       <Roadmap />
-      <Box
-        sx={{
-          backgroundImage: `url(${roadmapbg})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          height: 428
+      <RoadmapBg
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
         }}
       />
       <Simplesteps />

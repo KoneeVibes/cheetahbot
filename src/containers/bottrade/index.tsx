@@ -2,8 +2,21 @@ import { Box, Stack, Typography } from "@mui/material";
 import mapbg from "../../assets/mapbg.svg";
 import { BaseCard } from "../../components/card";
 import { trade } from "../../configs/content";
+import { Tradebot } from "../../assets";
 
 export const BotTrade: React.FC<{}> = () => {
+    const setTransform = (key: number) => {
+        switch (key) {
+            case 0:
+                return "rotate(10deg)"
+            case 1:
+                return "rotate(-10deg) scale(0.8)"
+            case 2:
+                return "rotate(-10deg)"
+            default:
+                break;
+        }
+    }
     return (
         <Box>
             <Stack
@@ -42,9 +55,8 @@ export const BotTrade: React.FC<{}> = () => {
             <Stack
                 className=""
                 direction={{ tablet: "row" }}
-                gap={"var(--flexGap)"}
+                gap={{ mobile: "var(--flexGap)", tablet: "0" }}
                 justifyContent={"center"}
-                margin={"var(--sectionMargin) var(--pagePadding)"}
                 sx={{
                     background: `url(${mapbg})`,
                     backgroundSize: "cover",
@@ -57,10 +69,19 @@ export const BotTrade: React.FC<{}> = () => {
                         <BaseCard
                             key={key}
                             borRad={8}
+                            hasicon={true}
+                            mobilevalue={70}
                             bord="1.31px solid rgba(255, 255, 255, 0.32)"
                             bgCol="transparent"
                             height="fit-content"
                             mobileCardPadding={"var(--cardPadding)"}
+                            position={"relative"}
+                            top={(key === 1) ? "400px" : "100px"}
+                            transform={setTransform(key)}
+                            mobileMargin={"var(--sectionMargin) var(--pagePadding)"}
+                            tabletMargin={(key !== 1) ? "var(--sectionMargin) var(--pagePadding)" : "0"}
+                            width="stretch"
+                            avatar={<Tradebot />}
                             title={
                                 <Typography
                                     variant="h3"
@@ -98,6 +119,7 @@ export const BotTrade: React.FC<{}> = () => {
                                     fontSize={{ mobile: 7, miniTablet: 12, tablet: 18, laptop: 20, desktop: 23 }}
                                     lineHeight={"normal"}
                                     color={"rgba(255, 255, 255, 1)"}
+                                    whiteSpace={"normal"}
                                 >
                                     {item.status}
                                 </Typography>

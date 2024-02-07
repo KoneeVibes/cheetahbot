@@ -43,7 +43,7 @@ export const Header: React.FC<{}> = () => {
                         textWrap: "pretty",
                     }}
                 >
-                    Welcome to Cheetahbot.tech The fastest, safest and most profitable Automated multi chain Trading bot.<br /><br />
+                    Welcome to Cheetahbot. The fastest, safest and most profitable automated multi chain trading bot.<br /><br />
                     EXPERIENCE the world of lightening speed with our sniper trading bot, grow your crypto currency portfolio on multiple chain and unlock limitless possibilities in your crypto currency profit trading.
                 </Typography>
             </Box>

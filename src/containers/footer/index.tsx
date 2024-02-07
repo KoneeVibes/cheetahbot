@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { Logo } from "../../assets";
 import { Footerbox } from "./styled";
 import { navLinks, smIcons } from "../../configs/content";
@@ -82,9 +82,15 @@ export const Footer: React.FC<{}> = () => {
                         >
                             {smIcons.map((icon, key) => {
                                 return (
-                                    <React.Fragment key={key}>
-                                        {icon}
-                                    </React.Fragment>
+                                    <IconButton
+                                        key={key}
+                                        onClick={() => window.open(icon.url, '_blank')}
+                                        sx={{
+                                            padding: { mobile: 0, tablet: ".5rem" },
+                                        }}
+                                    >
+                                        {icon.icon}
+                                    </IconButton>
                                 )
                             })}
                         </Stack>

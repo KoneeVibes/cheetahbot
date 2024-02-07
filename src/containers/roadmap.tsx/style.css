@@ -14,6 +14,10 @@
         text-overflow: ellipsis;
         list-style: inside;
     }
+
+    .roadmap-detail .MuiCardHeader-content {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 425px) {

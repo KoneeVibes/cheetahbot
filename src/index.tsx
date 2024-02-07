@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ContextProvider } from './context';
 import { ThemeProvider } from '@mui/material';
 import { theme } from './theme';
+import ScrollToTop from './scrollToTop';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,7 +16,9 @@ root.render(
     <ContextProvider>
       <ThemeProvider theme={theme}>
         <BrowserRouter>
-          <App />
+          <ScrollToTop>
+            <App />
+          </ScrollToTop>
         </BrowserRouter>
       </ThemeProvider>
     </ContextProvider>

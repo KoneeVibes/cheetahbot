@@ -44,6 +44,7 @@ export const Roadmap: React.FC<{}> = () => {
                             mobile={12}
                             tablet={6}
                             desktop={milestone.size}
+                            className="roadmap-detail"
                         >
                             <BaseCard
                                 borRad={8}
