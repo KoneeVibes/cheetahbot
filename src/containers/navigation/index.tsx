@@ -10,12 +10,12 @@ import { Context } from "../../context";
 
 
 export const Nav: React.FC<{}> = () => {
-    const { openMenu } = useContext(Context);
+    const { openMenu, setOpenMenu } = useContext(Context);
     useEffect(() => {
         if (openMenu) {
-            document.body.style.overflowY = "hidden"
+            document.body.style.overflowY = "hidden";
         } else {
-            document.body.style.overflowY = "visible"
+            document.body.style.overflowY = "visible";
         }
     }, [openMenu])
     return (
@@ -30,6 +30,7 @@ export const Nav: React.FC<{}> = () => {
                             <HashLink
                                 to={link.url}
                                 smooth={true}
+                                onClick={() => setOpenMenu(false)}
                             >
                                 {link.name}
                             </HashLink>
