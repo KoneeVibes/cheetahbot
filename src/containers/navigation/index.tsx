@@ -7,20 +7,27 @@ import { Typography } from "@mui/material";
 import { Menu } from "../../components/button/menu";
 import { useContext, useEffect } from "react";
 import { Context } from "../../context";
-
+import { useNavigate } from "react-router-dom";
 
 export const Nav: React.FC<{}> = () => {
     const { openMenu, setOpenMenu } = useContext(Context);
+    const navigate = useNavigate();
     useEffect(() => {
         if (openMenu) {
             document.body.style.overflowY = "hidden";
         } else {
             document.body.style.overflowY = "visible";
         }
-    }, [openMenu])
+    }, [openMenu]);
+    const handleLogoClick = () => {
+        setOpenMenu(false);
+        navigate("/");
+    };
     return (
         <Navbar>
-            <Logo />
+            <Logo 
+                onClick={handleLogoClick}
+            />
             <ul>
                 {navLinks.map((link, k) => {
                     return (
