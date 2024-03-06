@@ -170,7 +170,7 @@ export const smIcons = [
     },
     {
         icon: < Twitter />,
-        url: "https://x.com/Cheetah_Bots",
+        url: "https://x.com/Cheetah_Bots_",
     }
 ];
 
