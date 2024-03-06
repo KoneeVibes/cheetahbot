@@ -158,7 +158,7 @@ export const simplestepsII = [
 export const smIcons = [
     {
         icon: <Facebook />,
-        url: ""
+        url: "#"
     },
     {
         icon: <Telegram />,
@@ -166,7 +166,7 @@ export const smIcons = [
     },
     {
         icon: < Instagram />,
-        url: "",
+        url: "#",
     },
     {
         icon: < Twitter />,
