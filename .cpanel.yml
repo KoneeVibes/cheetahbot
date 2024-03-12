@@ -1,0 +1,11 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/cheetahb/public_html/
+ - /bin/cp /public/.htaccess $DEPLOYPATH
+ - /bin/cp /public/favicon.ico $DEPLOYPATH
+ - /bin/cp /public/index.html $DEPLOYPATH
+ - /bin/cp /public/logo192.png $DEPLOYPATH
+ - /bin/cp /public/logo512.png $DEPLOYPATH
+ - /bin/cp /public/manifest.json $DEPLOYPATH
+ - /bin/cp /public/robots.txt $DEPLOYPATH
