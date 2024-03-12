@@ -2,5 +2,5 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/cheetahb/public_html/
- - /bin/cp -R /public/* $DEPLOYPATH
+ - /bin cp /public/* $DEPLOYPATH
  
