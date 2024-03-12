@@ -37,7 +37,7 @@ export const BotTrade: React.FC<{}> = () => {
                         textWrap: "pretty"
                     }}
                 >
-                    Easily trade with our bot
+                    Easily trade with our bots
                 </Typography>
             </Stack>
             <Stack
