@@ -25,18 +25,6 @@ export const BotTrade: React.FC<{}> = () => {
                 marginRight={"auto"}
             >
                 <Typography
-                    variant="h2"
-                    textAlign={"center"}
-                    color={"rgba(255, 136, 17, 1)"}
-                    fontFamily={"Inter"}
-                    fontWeight={500}
-                    fontSize={{ mobile: 21, desktop: 21 }}
-                    lineHeight={"normal"}
-                    textTransform={"uppercase"}
-                >
-                    Send and receive
-                </Typography>
-                <Typography
                     variant="body1"
                     textAlign={"center"}
                     color={"rgba(255, 255, 255, 1)"}

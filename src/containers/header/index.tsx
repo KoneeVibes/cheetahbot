@@ -75,7 +75,7 @@ export const Header: React.FC<{}> = () => {
                         fontSize={{ mobile: 19 }}
                         lineHeight={"normal"}
                     >
-                        Dowload whitepaper
+                        Download whitepaper
                     </Typography>
                 </BaseButton>
             </ButtonStack>
