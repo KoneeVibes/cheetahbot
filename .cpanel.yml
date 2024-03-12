@@ -2,5 +2,5 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/cheetahb/public_html/
- - /bin cp -R repositories/cheetahbot/public/* $DEPLOYPATH
+ - /bin cp -R * $DEPLOYPATH
  
