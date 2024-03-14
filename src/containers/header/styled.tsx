@@ -3,7 +3,7 @@ import { Stack, styled } from "@mui/material";
 export const LogoStack = styled(Stack)(
     ({ theme }) => ({
         padding: "calc(var(--cardPadding)/1.5) 0",
-        width: "70%",
+        width: "75%",
         "svg": {
             height: "auto",
         }

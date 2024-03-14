@@ -17,7 +17,7 @@ export const Features: React.FC<{}> = () => {
                 backgroundImage: `url(${featuresBg})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                "& .MuiCardHeader-avatar svg":{
+                "& .MuiCardHeader-avatar svg": {
                     width: "49px !important",
                     height: "49px !important",
                 }
@@ -49,12 +49,16 @@ export const Features: React.FC<{}> = () => {
                             borRad={8}
                             hasicon={true}
                             flx="1 1 45%"
-                            mobilevalue={50}
-                            tabletvalue={100}
+                            cardavatarposition={{
+                                mobile: { top: 80, right: 50 },
+                                tablet: { top: 125, right: 100 },
+                                laptop: { top: 170, right: 100 },
+                            }}
                             bord={"2px solid rgba(255, 255, 255, 0.12)"}
                             bgCol="transparent"
                             cardPadding={"calc(2 * var(--cardPadding))"}
                             mobileCardPadding={"calc(var(--cardPadding)/1.5)"}
+                            cardheaderheight={{mobile: 49, laptop: 144}}
                             avatar={feature.icon}
                             title={
                                 <Typography

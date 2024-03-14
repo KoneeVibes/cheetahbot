@@ -58,7 +58,12 @@ export const BotTrade: React.FC<{}> = () => {
                             key={key}
                             borRad={8}
                             hasicon={true}
-                            mobilevalue={70}
+                            cardavatarposition={{
+                                mobile: { top: 95, right: 70 },
+                                tablet: { top: 110, right: 80 },
+                                laptop: { top: 125, right: 80 }
+                            }}
+                            cardheaderheight={{ mobile: 30, tablet: 64, laptop: 92 }}
                             bord="1.31px solid rgba(255, 255, 255, 0.32)"
                             bgCol="transparent"
                             height="fit-content"

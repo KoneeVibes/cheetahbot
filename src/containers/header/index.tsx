@@ -14,7 +14,7 @@ export const Header: React.FC<{}> = () => {
             }}
         >
             <Box
-                width={{ desktop: "70%" }}
+                width={{ desktop: "75%" }}
             >
                 <Typography
                     variant="h1"
@@ -22,13 +22,13 @@ export const Header: React.FC<{}> = () => {
                     color={"rgba(255, 255, 255, 1)"}
                     fontFamily={"Neue Machina"}
                     fontWeight={300}
-                    fontSize={{ mobile: 32, miniTablet: 42, tablet: 60, laptop: 65, desktop: 75.6 }}
+                    fontSize={{ mobile: 28, miniTablet: 32, tablet: 42, laptop: 60, desktop: 65 }}
                     lineHeight={"normal"}
                     sx={{
                         textWrap: "balance",
                     }}
                 >
-                    Fastest & Secure Trading Bot
+                    $CHEETAHBOT - Multi-chain Trading with Ease!
                 </Typography>
                 <Typography
                     variant="body1"
@@ -43,8 +43,8 @@ export const Header: React.FC<{}> = () => {
                         textWrap: "pretty",
                     }}
                 >
-                    Welcome to Cheetahbot. The fastest, safest and most profitable automated multi chain trading bot.<br /><br />
-                    EXPERIENCE the world of lightening speed with our sniper trading bot, grow your crypto currency portfolio on multiple chain and unlock limitless possibilities in your crypto currency profit trading.
+                    Welcome to Cheetahbot! The fastest and safest automated multi-chain trading bot in the market today! <br /><br />
+                    Experience lightning trading speed with our trading bots and grow your portfolio on multiple chains effortlessly with multiple bots in our system.
                 </Typography>
             </Box>
             <ButtonStack>

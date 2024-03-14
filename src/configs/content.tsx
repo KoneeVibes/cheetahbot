@@ -45,12 +45,12 @@ export const tokenomics = [
 export const features = [
     {
         title: "Sniper Bot",
-        body: "Experience the lightening cheetah speed, Be ahead of the game.",
+        body: "Experience the lightning $CHEETAH speed and always be ahead of the game.",
         icon: <Sniper />
     },
     {
-        title: "Buy/Sell",
-        body: "Without any limitations enjoy protection from MeV and be the safest trader.",
+        title: "Buy/Sell (with MEV protection)",
+        body: "Trade without any limitations through our MEV-protection feature and stay safe when you trade.",
         icon: <BuySell />
     },
     {
@@ -59,8 +59,8 @@ export const features = [
         icon: <Presale />
     },
     {
-        title: "Multi-Chain",
-        body: "Explore the widest Cryptocurrency Market discover Gems and enjoy your profit without stress with cheetah bot.",
+        title: "Advanced Multi-chain Trading",
+        body: "Explore multiple chains with ease just by using $CHEETAH, no need to use multiple bots depending on-chain.",
         icon: <MultiChain />
     },
     {
@@ -128,17 +128,17 @@ export const simplestepsI = [
     {
         id: "01",
         title: "Quick sign-up",
-        body: "It’ll take you 2 minutes top",
+        body: "It’ll take you two minutes to complete this step.",
     },
     {
         id: "02",
         title: "Security setup",
-        body: "It’ll take you 2 minutes top",
+        body: "It’ll take you two minutes to complete this step.",
     },
     {
         id: "03",
         title: "Connect wallet",
-        body: "It’ll take you 2 minutes top",
+        body: "It’ll take you two minutes to complete this step.",
     },
 ];
 
@@ -146,7 +146,7 @@ export const simplestepsII = [
     {
         id: "04",
         title: "Set your trades",
-        body: "Set your trades at your desired rate, and get paid.",
+        body: "Set your trades at your desired rate, and take profits with ease.",
     },
     {
         id: "05",

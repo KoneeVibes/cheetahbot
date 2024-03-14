@@ -1,3 +1,4 @@
+import { CardProps } from "@mui/material"
 import React from "react"
 
 export type CardBaseProps = {
@@ -28,6 +29,25 @@ export type CardBaseProps = {
     top?: string | number
     transform?: string
     hasicon?: boolean,
-    mobilevalue?: number,
-    tabletvalue?: number,
+    cardavatarposition?: {
+        mobile?: {
+            top?: number,
+            right?: number
+        },
+        tablet?: {
+            top?: number,
+            right?: number,
+        },
+        laptop?: {
+            top?: number,
+            right?: number,
+        }
+    },
+    cardheaderheight?: {
+        mobile?: number,
+        tablet?: number,
+        laptop?: number,
+    }
 }
+
+export type BaseCardProps = CardBaseProps & Omit<CardProps, keyof CardBaseProps>

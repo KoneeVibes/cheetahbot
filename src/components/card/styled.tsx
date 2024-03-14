@@ -1,12 +1,27 @@
 import { Card, styled } from "@mui/material";
 
-export const CardBase = styled(Card)<{ hasicon: boolean, mobilevalue: number, tabletvalue: number }>(
-    ({ theme, hasicon, mobilevalue, tabletvalue }) => ({
+type CardBaseProps = {
+    hasicon: boolean,
+    cardavatarposition?: {
+        mobile?: { top?: number, right?: number },
+        tablet?: { top?: number, right?: number },
+        laptop?: { top?: number, right?: number },
+    }
+}
+
+export const CardBase = styled(Card)<CardBaseProps>(
+    ({ theme, hasicon, cardavatarposition }) => ({
         overflow: hasicon ? "visible" : "hidden",
         width: "100%",
         boxSizing: "border-box",
+        "& .MuiCardHeader-root": {
+            position: hasicon && "relative",
+        },
         "& .MuiCardHeader-content": {
-            position: hasicon && "absolute"
+            position: hasicon && "absolute",
+            left: 0,
+            paddingLeft: 16,
+            paddingRight: 16,
         },
         "& .MuiCardHeader-avatar": {
             position: hasicon && "relative",
@@ -14,11 +29,15 @@ export const CardBase = styled(Card)<{ hasicon: boolean, mobilevalue: number, ta
         },
         "& .MuiCardHeader-avatar svg": {
             position: hasicon && "absolute",
-            top: hasicon && `-${mobilevalue}px`,
-            right: hasicon && `-${mobilevalue}px`,
+            top: hasicon && `-${cardavatarposition?.mobile?.top}px`,
+            right: hasicon && `-${cardavatarposition?.mobile?.right}px`,
             [theme.breakpoints.up("tablet")]: {
-                top: hasicon && `-${tabletvalue}px`,
-                right: hasicon && `-${tabletvalue}px`
+                top: hasicon && `-${cardavatarposition?.tablet?.top}px`,
+                right: hasicon && `-${cardavatarposition?.tablet?.right}px`
+            },
+            [theme.breakpoints.up("laptop")]: {
+                top: hasicon && `-${cardavatarposition?.laptop?.top}px`,
+                right: hasicon && `-${cardavatarposition?.laptop?.right}px`
             },
             [theme.breakpoints.down("tablet")]: {
                 width: !hasicon && "50%",
