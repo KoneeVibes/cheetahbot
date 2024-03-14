@@ -19,7 +19,7 @@ export const CardBase = styled(Card)<CardBaseProps>(
         },
         "& .MuiCardHeader-content": {
             position: hasicon && "absolute",
-            left: 0,
+            left: hasicon && 0,
             paddingLeft: 16,
             paddingRight: 16,
         },

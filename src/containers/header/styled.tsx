@@ -18,7 +18,7 @@ export const ButtonStack = styled(Stack)(
         [theme.breakpoints.up("tablet")]: {
             flexDirection: "row"
         },
-        [theme.breakpoints.between(280, "desktop")]: {
+        [theme.breakpoints.between(327, "desktop")]: {
             width: "fit-content",
         }
     })
