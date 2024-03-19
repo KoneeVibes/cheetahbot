@@ -5,6 +5,7 @@ import { clientsI, clientsII } from "../../configs/content";
 import { ButtonStack, LogoStack } from "./styled";
 
 export const Header: React.FC<{}> = () => {
+    const whitepaper = 'https://app.gitbook.com/invite/2oWlWT9hBXVMfNvIYtMT/BcAFy1AnXjj1Dt7CaoLi';
     return (
         <Stack
             margin={{
@@ -65,6 +66,7 @@ export const Header: React.FC<{}> = () => {
                 </BaseButton>
                 <BaseButton
                     variant="outlined"
+                    onClick={() => window.open(whitepaper, '_blank')}
                 >
                     <Typography
                         variant="button"
@@ -75,7 +77,7 @@ export const Header: React.FC<{}> = () => {
                         fontSize={{ mobile: 19 }}
                         lineHeight={"normal"}
                     >
-                        Download whitepaper
+                        Whitepaper Document
                     </Typography>
                 </BaseButton>
             </ButtonStack>
