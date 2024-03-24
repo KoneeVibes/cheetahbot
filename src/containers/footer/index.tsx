@@ -73,7 +73,7 @@ export const Footer: React.FC<{}> = () => {
                                 lineHeight={"normal"}
                                 color={"rgba(255, 255, 255, 1)"}
                             >
-                                cheetahbots.tech@gmail.com
+                                info@cheetahbots.tech
                             </Typography>
                         </Box>
                         <Stack
