@@ -5,7 +5,8 @@ import { clientsI, clientsII } from "../../configs/content";
 import { ButtonStack, LogoStack } from "./styled";
 
 export const Header: React.FC<{}> = () => {
-    const whitepaper = 'https://app.gitbook.com/invite/2oWlWT9hBXVMfNvIYtMT/BcAFy1AnXjj1Dt7CaoLi';
+    const whitepaper = 'https://cheetah-bots-whitepaper.gitbook.io/cheetah-bots/';
+    const botUrl = '#';
     return (
         <Stack
             margin={{
@@ -51,6 +52,7 @@ export const Header: React.FC<{}> = () => {
             <ButtonStack>
                 <BaseButton
                     variant="contained"
+                    onClick={() => window.open(botUrl, '_blank')}
                 >
                     <Typography
                         variant="button"
