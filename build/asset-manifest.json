@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.da49fff3.css",
-    "main.js": "/static/js/main.72be7262.js",
+    "main.js": "/static/js/main.ffe1f41a.js",
     "static/media/featuresBg.svg": "/static/media/featuresBg.a160861c7993989e8a4768ac539ce7bd.svg",
     "static/media/headerBg.svg": "/static/media/headerBg.4b734c3042071564125a559dc91f4f92.svg",
     "static/media/roadmapbodybg.svg": "/static/media/roadmapbodybg.b0ee07caaaa6065550f305341d27b605.svg",
+    "static/media/dexToolsLogo.svg": "/static/media/dexToolsLogo.a763273126d614bc554ce0e5089e2e72.svg",
     "static/media/roadmapbg.svg": "/static/media/roadmapbg.a7e7f10c3f249771ca75b9b18bb65bfe.svg",
     "static/media/NeueMachina-Regular.otf": "/static/media/NeueMachina-Regular.6c408aeebce449ab7d74.otf",
     "static/media/NeueMachina-Light.otf": "/static/media/NeueMachina-Light.e1fb3b2574d18010b9ff.otf",
@@ -38,14 +39,15 @@
     "static/media/tax.svg": "/static/media/tax.a439bbbcec1b3e952b7a50a6cdea8940.svg",
     "static/media/telegram.svg": "/static/media/telegram.2cb58d8d169a60dff3311fdb8935db63.svg",
     "static/media/analyser.svg": "/static/media/analyser.b6f0aad3e6bba12638ddb3a76d584c2b.svg",
+    "static/media/contractAddress.svg": "/static/media/contractAddress.e86a456a69f1b96085d62f570e208ad8.svg",
     "static/media/facebook.svg": "/static/media/facebook.241b8dd656be738f18ec9ffff4f6d823.svg",
     "index.html": "/index.html",
     "static/media/twitter.svg": "/static/media/twitter.91cd99f0101306ad527c0d4601fa4c29.svg",
     "main.da49fff3.css.map": "/static/css/main.da49fff3.css.map",
-    "main.72be7262.js.map": "/static/js/main.72be7262.js.map"
+    "main.ffe1f41a.js.map": "/static/js/main.ffe1f41a.js.map"
   },
   "entrypoints": [
     "static/css/main.da49fff3.css",
-    "static/js/main.72be7262.js"
+    "static/js/main.ffe1f41a.js"
   ]
 }
