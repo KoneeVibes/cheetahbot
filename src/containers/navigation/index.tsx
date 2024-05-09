@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { navLinks } from "../../configs/content";
 import { Navbar } from "./styled";
-import { Logo } from "../../assets";
+import { DexToolsLogo, Logo } from "../../assets";
 import { BaseButton } from "../../components/button";
 import { Stack, Typography } from "@mui/material";
 import { Menu } from "../../components/button/menu";
@@ -24,6 +24,10 @@ export const Nav: React.FC<{}> = () => {
         setOpenMenu(false);
         navigate("/");
     };
+    const redirectToDexTools = () => {
+        setOpenMenu(false);
+        window.open(DEX_URL, '_blank');
+    }
     return (
         <Navbar>
             <Logo
@@ -62,15 +66,9 @@ export const Nav: React.FC<{}> = () => {
                 </BaseButton>
                 <BaseButton
                     variant="text"
-                    // startIcon={ }
-                    onClick={() => window.open(DEX_URL, '_blank')}
+                    startIcon={<DexToolsLogo />}
+                    onClick={redirectToDexTools}
                 >
-                    <Typography
-                        variant="button"
-                        color={"rgba(255, 255, 255, 1)"}
-                    >
-                        DEXTools
-                    </Typography>
                 </BaseButton>
             </Stack>
             <Menu />

@@ -32,3 +32,4 @@ export { ReactComponent as Analyser } from "./analyser.svg";
 export { ReactComponent as Copy } from "./copy.svg";
 export { ReactComponent as RoadmapBg } from "./roadmapbg.svg";
 export { ReactComponent as ContractAddress } from "./contractAddress.svg";
+export { ReactComponent as DexToolsLogo } from "./dexToolsLogo.svg";
