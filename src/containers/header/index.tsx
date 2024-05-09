@@ -3,6 +3,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import { BaseButton } from "../../components/button";
 import { clientsI, clientsII } from "../../configs/content";
 import { ButtonStack, LogoStack } from "./styled";
+import { ContractAddress } from "../../assets";
 
 export const Header: React.FC<{}> = () => {
     const whitepaper = 'https://cheetah-bots-whitepaper.gitbook.io/cheetah-bots/';
@@ -46,7 +47,7 @@ export const Header: React.FC<{}> = () => {
                     }}
                 >
                     Welcome to Cheetahbot! The fastest and safest automated multi-chain trading bot in the market today! <br /><br />
-                    Experience lightning trading speed with our trading bots and grow your portfolio on multiple chains effortlessly with multiple bots in our system.
+                    Experience lightning trading speed with our trading bots and grow your portfolio on multiple chains effortlessly with multiple bots in our system. <br></br><span style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBlockStart: "2rem", overflowWrap: "anywhere" }}><ContractAddress />0x7a27Fc0212D71d5fAFD1fA9BDb34ed2190F73F99</span>
                 </Typography>
             </Box>
             <ButtonStack>

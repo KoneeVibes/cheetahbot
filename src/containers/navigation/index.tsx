@@ -1,15 +1,16 @@
+import { useContext, useEffect } from "react";
+import { Context } from "../../context";
+import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { navLinks } from "../../configs/content";
 import { Navbar } from "./styled";
 import { Logo } from "../../assets";
 import { BaseButton } from "../../components/button";
-import { Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { Menu } from "../../components/button/menu";
-import { useContext, useEffect } from "react";
-import { Context } from "../../context";
-import { useNavigate } from "react-router-dom";
 
 export const Nav: React.FC<{}> = () => {
+    const DEX_URL = process.env.REACT_APP_DEX_URL;
     const { openMenu, setOpenMenu } = useContext(Context);
     const navigate = useNavigate();
     useEffect(() => {
@@ -25,7 +26,7 @@ export const Nav: React.FC<{}> = () => {
     };
     return (
         <Navbar>
-            <Logo 
+            <Logo
                 onClick={handleLogoClick}
             />
             <ul>
@@ -45,16 +46,33 @@ export const Nav: React.FC<{}> = () => {
                     )
                 })}
             </ul>
-            <BaseButton
-                variant="contained"
-                className="actionButton"
+            <Stack
+                className="actionButtons"
+                gap={"calc(var(--flexGap)/2)"}
+                direction={{ tablet: "row" }}
             >
-                <Typography
-                    variant="button"
+                <BaseButton
+                    variant="contained"
                 >
-                    Get started
-                </Typography>
-            </BaseButton>
+                    <Typography
+                        variant="button"
+                    >
+                        Get started
+                    </Typography>
+                </BaseButton>
+                <BaseButton
+                    variant="text"
+                    // startIcon={ }
+                    onClick={() => window.open(DEX_URL, '_blank')}
+                >
+                    <Typography
+                        variant="button"
+                        color={"rgba(255, 255, 255, 1)"}
+                    >
+                        DEXTools
+                    </Typography>
+                </BaseButton>
+            </Stack>
             <Menu />
         </Navbar>
     )

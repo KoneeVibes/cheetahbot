@@ -13,10 +13,13 @@ export const LogoStack = styled(Stack)(
 export const ButtonStack = styled(Stack)(
     ({ theme }) => ({
         gap: "calc(var(--flexGap)/1.5)",
-        padding: "var(--cardPadding) 0",
+        padding: "calc(1.5 * var(--cardPadding)) 0 var(--cardPadding)",
         overflow: "hidden",
         [theme.breakpoints.up("tablet")]: {
             flexDirection: "row"
+        },
+        [theme.breakpoints.down("miniTablet")]: {
+            padding: "var(--cardPadding) 0",
         },
         [theme.breakpoints.between(327, "desktop")]: {
             width: "fit-content",

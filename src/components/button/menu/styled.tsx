@@ -31,7 +31,7 @@ export const Hamburger = styled(Box)(
                 transform: "translate(-50%, -50%)",
                 top: "calc(1.5 * var(--cardPadding))"
             },
-            [theme.breakpoints.up("tablet")]: {
+            [theme.breakpoints.up("desktop")]: {
                 display: "none"
             }
         }

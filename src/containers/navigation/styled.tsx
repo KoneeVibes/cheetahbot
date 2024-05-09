@@ -21,8 +21,8 @@ export const Navbar = styled("nav")(
                 alignItems: "center",
                 justifyContent: "space-between",
                 paddingInlineStart: 0,
-                width: "30%",
-                [theme.breakpoints.down("tablet")]: {
+                listStyleType: "none",
+                [theme.breakpoints.down("desktop")]: {
                     display: openMenu ? "flex" : "none",
                     flexDirection: "column",
                     justifyContent: "flex-start",
@@ -37,6 +37,9 @@ export const Navbar = styled("nav")(
                     zIndex: 10,
                     marginBlockEnd: 0,
                 },
+                [theme.breakpoints.down("miniTablet")]: {
+                    gap: theme.spacing(5),
+                }
             },
             "& a": {
                 fontWeight: 400,
@@ -45,9 +48,9 @@ export const Navbar = styled("nav")(
                 color: "#FFFFFF",
                 textDecoration: "none",
             },
-            "& .actionButton": {
-                [theme.breakpoints.down("tablet")]: {
-                    display: openMenu ? "inline-flex" : "none",
+            "& .actionButtons": {
+                [theme.breakpoints.down("desktop")]: {
+                    display: openMenu ? "flex" : "none",
                     position: "fixed",
                     left: "50%",
                     transform: "translate(-50%, -50%)",

@@ -30,4 +30,5 @@ export { ReactComponent as AntiRug } from "./antirug.svg";
 export { ReactComponent as Limit } from "./limit.svg";
 export { ReactComponent as Analyser } from "./analyser.svg";
 export { ReactComponent as Copy } from "./copy.svg";
-export {ReactComponent as RoadmapBg} from "./roadmapbg.svg";
+export { ReactComponent as RoadmapBg } from "./roadmapbg.svg";
+export { ReactComponent as ContractAddress } from "./contractAddress.svg";

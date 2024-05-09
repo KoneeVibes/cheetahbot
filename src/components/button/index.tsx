@@ -20,7 +20,7 @@ export const BaseButton = styled(Button)(
         border: (() => {
             switch (variant) {
                 case 'text':
-                    return 'none';
+                    return '1px solid #454545';
                 case 'contained':
                     return 'rgba(255, 136, 17, 1)';
                 case 'outlined':
@@ -45,7 +45,7 @@ export const BaseButton = styled(Button)(
             border: (() => {
                 switch (variant) {
                     case 'text':
-                        return 'none';
+                        return '1px solid #454545';
                     case 'contained':
                         return 'rgba(255, 136, 17, 1)';
                     case 'outlined':
